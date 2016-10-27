@@ -1,6 +1,9 @@
 Asthma Health
 =============
-The Asthma Mobile Health study is a personalized app that helps individuals gain greater insight into their asthma, adhere to treatment plans, and avoid triggers. The app presents a variety of surveys to better understand unique triggers for asthma exacerbations, and connects with HealthKit to track inhaler usage and peak flow values. 
+The Asthma Health app, among the first apps to make use of Apple's ResearchKit, allows researchers to leverage the power of smartphones to conduct far-ranging studies of asthma for relatively low cost.  Upon downloading the app, users can consent to the Asthma Mobile Health Study, securely transmit data about their past medical history and ongoing symptoms. Users can also learn about asthma and local air quality, review trends in their activity and other variables, and receive personalized reminders to prescribed medications. 
+
+More about this app is available at: http://icahndigitalhealth.org/asthmastudy/
+
 
 Building the App
 ================
