@@ -1,0 +1,1130 @@
+{
+	"identifier": "AsthmaMedication",
+	"type": "Survey",
+	"name": "AsthmaMedication",
+	"elements": [
+		{
+			"identifier": "prescribed_asthma_control_medication",
+			"prompt": "Are you prescribed daily asthma control medication?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "854cff00-3b2f-41c2-9b36-17b72287819b",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"rules": [
+					{
+						"operator": "eq",
+						"skipTo": "quick_relief",
+						"type": "SurveyRule",
+						"value": 2
+					}
+				],
+				"dataType": "integer",
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Yes"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "No"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Not Sure"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "daily_inhaled_medicine",
+			"prompt": "Which of the following daily inhaled asthma controller medicines are you prescribed?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "664CA44B-0121-4F13-B179-64938B1AB9D6",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "de",
+						"skipTo": "daily_controller_medication",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "eq",
+						"skipTo": "advair_diskus_dose",
+						"type": "SurveyRule",
+						"value": 1
+					},
+					{
+						"operator": "eq",
+						"skipTo": "alvesco_dose",
+						"type": "SurveyRule",
+						"value": 2
+					},
+					{
+						"operator": "eq",
+						"skipTo": "advair_hfa_dose",
+						"type": "SurveyRule",
+						"value": 3
+					},
+					{
+						"operator": "eq",
+						"skipTo": "dulera_dose",
+						"type": "SurveyRule",
+						"value": 4
+					},
+					{
+						"operator": "eq",
+						"skipTo": "qvar_dose",
+						"type": "SurveyRule",
+						"value": 5
+					},
+					{
+						"operator": "eq",
+						"skipTo": "flovent_diskus_dose",
+						"type": "SurveyRule",
+						"value": 6
+					},
+					{
+						"operator": "eq",
+						"skipTo": "symbicort_dose",
+						"type": "SurveyRule",
+						"value": 7
+					},
+					{
+						"operator": "eq",
+						"skipTo": "flovent_hfa_dose",
+						"type": "SurveyRule",
+						"value": 8
+					},
+					{
+						"operator": "eq",
+						"skipTo": "pulmicort_dose",
+						"type": "SurveyRule",
+						"value": 9
+					},
+					{
+						"operator": "eq",
+						"skipTo": "asmanex_dose",
+						"type": "SurveyRule",
+						"value": 10
+					},
+					{
+						"operator": "eq",
+						"skipTo": "breo_dose",
+						"type": "SurveyRule",
+						"value": 11
+					},
+					{
+						"operator": "eq",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule",
+						"value": 12
+					},
+					{
+						"operator": "eq",
+						"skipTo": "asmabec_dose",
+						"type": "SurveyRule",
+						"value": 13
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Seretide Diskus"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Alvesco"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Seretide Evohaler"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "Sirdupla"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Qvar or Clenil"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 6,
+						"label": "Flovent Diskus"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 7,
+						"label": "Symbicort"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 8,
+						"label": "Flixotide Evohaler"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 9,
+						"label": "Pulmicort or Budelin"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 10,
+						"label": "Asmanex"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 11,
+						"label": "Relvar Ellipta"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 12,
+						"label": "Fostair"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 13,
+						"label": "Asmabec"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "advair_diskus_dose",
+			"prompt": "What is the dose of your Seretide Diskus?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "08F664A7-1222-4690-98EC-591CABD32231",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "100/50 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "250/50 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "500/50 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "alvesco_dose",
+			"prompt": "What is the dose of your Alvesco?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "634BDCFB-D12D-4240-ADB5-7F316787718D",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "80 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "160 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "advair_hfa_dose",
+			"prompt": "What is the dose of your Seretide Evohaler?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "1D538BAF-CB14-48B6-BE99-5C999DCF3515",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "45/21 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "115/21 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "230/21 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "dulera_dose",
+			"prompt": "What is the dose of your Sirdupla?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "D3848E88-50C1-4EB7-9513-DC683642290F",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "100/5 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "200/5 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "qvar_dose",
+			"prompt": "What is the dose of your Qvar or Clenil?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "5B3ECB5C-347C-43EB-AE9F-611CF1CD8A95",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "50 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "100 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "250 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "flovent_diskus_dose",
+			"prompt": "What is the dose of your Flovent Diskus?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "A5E7EBF1-327C-4670-B9C9-84D1038CC3EF",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "100 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "250 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "symbicort_dose",
+			"prompt": "What is the dose of your Symbicort?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "AAEAD886-5AD6-4419-A851-C2D66BE8978F",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "80/4.5  mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "160/4.5 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "flovent_hfa_dose",
+			"prompt": "What is the dose of your Flixotide Evohaler?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "3ADFBBC2-BBE5-46EA-9065-A84DC4CD629C",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "44 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "110 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "220 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "pulmicort_dose",
+			"prompt": "What is the dose of your Pulmicort or Budelin?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "2156837D-B71D-4AFF-A562-63B9E358F0EB",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "90 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "180 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "asmanex_dose",
+			"prompt": "What is the dose of your Asmanex?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "67256DEB-FF0E-4AE9-8D64-B24E5F7B410B",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "110 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "220 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "breo_dose",
+			"prompt": "What is the dose of your Relvar Ellipta?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "ee430716-07ce-44eb-a7df-525488024ae5",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "controlmed",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "controlmed",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "92/22 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "184/22 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "asmabec_dose",
+			"prompt": "What is the dose of your Asmabec?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "aa7703e5-7a90-4b87-83fb-3c7357b74b7e",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"rules": [
+					{
+						"operator": "gt",
+						"value": 0,
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					},
+					{
+						"operator": "de",
+						"skipTo": "control_puffs",
+						"type": "SurveyRule"
+					}
+				],
+				"allowMultiple": false,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "50 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "100 mcg"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "250 mcg"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "control_puffs",
+			"prompt": "How many total puffs per day do you take of your controller medicine?",
+			"uiHint": "numberfield",
+			"guid": "18570532-78ac-4d0f-bcbe-8f6af1d29b33",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"step": null,
+				"type": "IntegerConstraints",
+				"maxValue": 20,
+				"minValue": 0
+			}
+		},
+		{
+			"identifier": "controlmed",
+			"prompt": "On average, I take my prescribed asthma control medication...",
+			"uiHint": "MultiValueConstraints",
+			"guid": "854fff00-3d2c-41c2-9c36-17b72287819b",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"type": "MultiValueConstraints",
+				"rules": [
+					{
+						"operator": "eq",
+						"skipTo": "daily_controller_medication",
+						"type": "SurveyRule",
+						"value": 5
+					}
+				],
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Every day"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "5-6 days per week"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "2-4 days per week"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "Once per week or less"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "I am not prescribed asthma controller medication"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 6,
+						"label": "I don't know which of my medicines is my daily asthma control medication"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "non_adherent",
+			"prompt": "If I don’t take my daily control medication as prescribed, it’s because...",
+			"uiHint": "MultiValueConstraints",
+			"guid": "bd40beef-db65-4bb4-881a-5cf40540ff41",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"rules": [
+					{
+						"operator": "ot",
+						"skipTo": "daily_controller_medication",
+						"type": "SurveyRule",
+						"value": 5
+					}
+				],
+				"dataType": "integer",
+				"type": "MultiValueConstraints",
+				"allowMultiple": true,
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "I want to avoid side effects"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "I forget to take it"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "I run out before I have a new prescription"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "I only take it when I feel I need it"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Other"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 6,
+						"label": "I always take my daily control medication as prescribed"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "non_adherent_other",
+			"prompt": "What other reason do you not take your daily control medication as prescribed?",
+			"uiHint": "multilinetext",
+			"guid": "dba4d974-cd4d-431f-86c8-726b3d442998",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "string",
+				"type": "StringConstraints"
+			}
+		},
+		{
+			"identifier": "daily_controller_medication",
+			"prompt": "Which of the following other daily inhaled, injected or oral controller medications are you prescribed? (check all that apply)",
+			"uiHint": "MultiValueConstraints",
+			"guid": "854fff00-3d2e-41c2-9c36-17b7c287819f",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"allowMultiple": true,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Spiriva"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Eklira Genuair"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Accolate"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "Singulair or Montelukast"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Neulin SA or Slo-Phyllin"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 6,
+						"label": "Uniphyllin Continus"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 7,
+						"label": "Xolair"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 8,
+						"label": "None of the above"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 9,
+						"label": "I choose not to answer"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "steroid_which",
+			"prompt": "Which of the following oral steroids are you prescribed?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "10BAC487-69E2-4887-8653-3197309A70A3",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Medrone"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Lodotra"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Prednisolone or Deltacortril"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "I am not prescribed an oral steroid"
+					}
+				],
+				"rules": [
+					{
+						"operator": "eq",
+						"skipTo": "use_nebulizer",
+						"type": "SurveyRule",
+						"value": 4
+					},
+					{
+						"operator": "de",
+						"skipTo": "use_nebulizer",
+						"type": "SurveyRule"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "steroid_dose",
+			"prompt": "What is the dose of your oral steroid (mg)?",
+			"uiHint": "numberfield",
+			"guid": "AF4E576C-5059-4C1B-8FFA-D19CE3AB15FC",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"type": "IntegerConstraints",
+				"maxValue": 100,
+				"minValue": 0
+			}
+		},
+		{
+			"identifier": "use_nebulizer",
+			"prompt": "Do you use a nebulizer?",
+			"uiHint": "checkbox",
+			"guid": "e736d671-c333-46be-b1c4-bb59d565c18d",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "boolean",
+				"rules": [
+					{
+						"operator": "eq",
+						"skipTo": "quick_relief",
+						"type": "SurveyRule",
+						"value": 0
+					},
+					{
+						"operator": "de",
+						"skipTo": "quick_relief",
+						"type": "SurveyRule"
+					}
+				],
+				"type": "BooleanConstraints"
+			}
+		},
+		{
+			"identifier": "nebulizer_meds",
+			"prompt": "Which medicines do you nebulize? (select all that apply)",
+			"uiHint": "MultiValueConstraints",
+			"guid": "324f0e35-d2b9-4eb0-87e8-23b4016f768c",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"allowMultiple": true,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Albuterol"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Levalbuterol/Xopenex"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Budesonide/Pulmicort"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "Atrovent/Ipratropium"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Arformoterol/Brovana"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 6,
+						"label": "Duoneb (albuterol/ipratropium)"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "nebulize_daily",
+			"prompt": "Do you use your nebulizer daily?",
+			"uiHint": "checkbox",
+			"guid": "272db7cc-aa4f-421c-aed7-8ce3d3805ea8",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "boolean",
+				"type": "BooleanConstraints"
+			}
+		},
+		{
+			"identifier": "quick_relief",
+			"prompt": "Which of the following medicines do you take for quick relief of asthma symptoms? (check all that apply)",
+			"uiHint": "MultiValueConstraints",
+			"guid": "854fff00-3d2c-41c2-9f36-17b77787819e",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"rules": [
+					{
+						"operator": "ot",
+						"skipTo": "past_month_quick_relief",
+						"type": "SurveyRule",
+						"value": 5
+					}
+				],
+				"dataType": "integer",
+				"allowMultiple": true,
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Atrovent or Ipratropium"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Salipraneb or Ipramol"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "Ventolin or Pulvinal"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "Salamol or Salapin"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Other"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "quick_relief_other",
+			"prompt": "What other medicines do you take for quick relief of asthma symptoms?",
+			"uiHint": "multilinetext",
+			"guid": "864fff00-3d2c-41c2-9f36-17b77787819e",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "string",
+				"type": "StringConstraints"
+			}
+		},
+		{
+			"identifier": "past_month_quick_relief",
+			"prompt": "Over the past month, how often did you use your quick relief inhaler, on average?",
+			"uiHint": "MultiValueConstraints",
+			"guid": "854ccf00-3e2c-41c2-9b36-17b72287819b",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"rules": [
+					{
+						"operator": "eq",
+						"skipTo": "other_meds",
+						"type": "SurveyRule",
+						"value": 5
+					}
+				],
+				"dataType": "integer",
+				"type": "MultiValueConstraints",
+				"enumeration": [
+					{
+						"type": "SurveyQuestionOption",
+						"value": 1,
+						"label": "Daily"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 2,
+						"label": "Most but not all days"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 3,
+						"label": "2-3 days per week"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 4,
+						"label": "1-4 x per month"
+					},
+					{
+						"type": "SurveyQuestionOption",
+						"value": 5,
+						"label": "Not at all"
+					}
+				]
+			}
+		},
+		{
+			"identifier": "daily_yes",
+			"prompt": "On days when you use your quick relief inhaler, how many total puffs do you take in a day, on average?",
+			"uiHint": "numberfield",
+			"guid": "21987af2-4846-48e4-fc80-27e3371186e0",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "integer",
+				"step": null,
+				"type": "IntegerConstraints",
+				"maxValue": 20,
+				"minValue": 1
+			}
+		},
+		{
+			"identifier": "other_meds",
+			"prompt": "Do you use any other asthma medications? Please include the names, doses and how often you use them.",
+			"uiHint": "multilinetext",
+			"guid": "afdeb035-9cff-471e-baa3-7f74b9dd5697",
+			"type": "SurveyQuestion",
+			"constraints": {
+				"dataType": "string",
+				"type": "StringConstraints"
+			}
+		}
+	]
+}

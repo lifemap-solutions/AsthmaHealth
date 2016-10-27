@@ -1,0 +1,249 @@
+{
+    "schedules": [
+                  {
+                  "scheduleType": "once",
+                  "delay"  : "P3D",
+                  "country": ["US"],
+                  "tasks": [{
+                            "taskTitle" : "About You",
+                            "taskID": "AboutYou-27829fa5-d731-4372-ba30-a5859f688297",
+                            "taskFileName" : "AboutYou",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "9 Questions",
+                            "version" : 2
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "delay"  : "P3D",
+                  "country": ["UK"],
+                  "tasks": [{
+                            "taskTitle" : "About You",
+                            "taskID": "AboutYou-UK-27829fa5-d731-4372-ba30-a5859f688297",
+                            "taskFileName" : "AboutYou_UK",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "9 Questions",
+                            "version" : 2
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "delay"  : "P3D",
+                  "country": ["IE"],
+                  "tasks": [{
+                            "taskTitle" : "About You",
+                            "taskID": "AboutYou-IE-27829fa5-d731-4372-ba30-a5859f688297",
+                            "taskFileName" : "AboutYou_IE",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "9 Questions",
+                            "version" : 2
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "scheduleString": "0 5 * * *",
+                  "country": ["US"],
+                  "tasks": [{
+                            "taskTitle" : "Daily Survey",
+                            "taskID": "DailyPrompt-27829fa5-d731-4372-ba30-a5859f655297",
+                            "taskFileName" : "AsthmaDailyPrompt",
+                            "taskClassName" : "APHDailyTaskViewController",
+                            "taskCompletionTimeString" : "8 Questions",
+                            "version" : 3
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "scheduleString": "0 5 * * *",
+                  "testGroup": ["A"],
+                  "country": ["UK", "IE"],
+                  "tasks": [{
+                            "taskTitle" : "Daily Survey",
+                            "taskID": "DailyPrompt-27829fa5-d731-4372-ba30-a5859f655297",
+                            "taskFileName" : "AsthmaDailyPrompt",
+                            "taskClassName" : "APHDailyTaskViewController",
+                            "taskCompletionTimeString" : "8 Questions",
+                            "version" : 3
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "scheduleString": "0 5 * * *",
+                  "testGroup": ["B"],
+                  "country": ["UK", "IE"],
+                  "tasks": [{
+                            "taskTitle" : "Daily Survey",
+                            "taskID": "DailyPrompt-27829fa5-d731-4372-ba30-a5859f655297",
+                            "taskFileName" : "AsthmaDailyPromptRevised",
+                            "taskClassName" : "APHDailyRevisedTaskViewController",
+                            "taskCompletionTimeString" : "8 Questions",
+                            "version" : 3
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "scheduleString": "0 5 * * 6",
+                  "tasks": [{
+                            "taskTitle" : "Weekly Survey",
+                            "taskID": "WeeklySurvey-b573a78-8917-4582-8f1f-0552d0bfd28a",
+                            "taskFileName" : "AsthmaWeekly",
+                            "taskClassName" : "APHWeeklyTaskViewController",
+                            "taskCompletionTimeString" : "16 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "delay"  : "P4D",
+                  "tasks": [{
+                            "taskTitle" : "Medical History",
+                            "taskID": "MedicalHistory-b3cd0d66-b943-11e4-a71e-12e3f512a338",
+                            "taskFileName" : "MedicalHistory",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "18 Questions",
+                            "version" : 2
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "expires" : "P165D",
+                  "country" : ["US"],
+                  "tasks": [{
+                            "taskTitle" : "Asthma Medication",
+                            "taskID": "AsthmaMedication-c2379e84-b943-11e4-a71e-12e3f512a338-v2.0",
+                            "taskFileName" : "AsthmaMedicationSurvey",
+                            "taskClassName" : "APHMedicationTaskViewController",
+                            "taskCompletionTimeString" : "20 Questions",
+                            "version" : 6
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "expires" : "P165D",
+                  "country" : ["UK"],
+                  "tasks": [{
+                            "taskTitle" : "Asthma Medication",
+                            "taskID": "AsthmaMedication-UK-261d482d-ee39-463e-be63-13c98021f36c",
+                            "taskFileName" : "AsthmaMedicationSurvey_UK",
+                            "taskClassName" : "APHMedicationTaskViewController",
+                            "taskCompletionTimeString" : "20 Questions",
+                            "version" : 6
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "expires" : "P165D",
+                  "country" : ["IE"],
+                  "tasks": [{
+                            "taskTitle" : "Asthma Medication",
+                            "taskID": "AsthmaMedication-IE-261d482d-ee39-463e-be63-13c98021f36c",
+                            "taskFileName" : "AsthmaMedicationSurvey_IE",
+                            "taskClassName" : "APHMedicationTaskViewController",
+                            "taskCompletionTimeString" : "20 Questions",
+                            "version" : 6
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "delay"  : "P2D",
+                  "tasks": [{
+                            "taskTitle" : "Your Asthma",
+                            "taskID": "YourAsthma-cc06cd68-b943-11e4-a71e-12e3f512a338",
+                            "taskFileName" : "YourAsthma",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "10 Questions",
+                            "version" : 2
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "Asthma History",
+                            "taskID": "AsthmaHistory-d6d07ba4-b943-11e4-a71e-12e3f512a338",
+                            "taskFileName" : "AsthmaHistory",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "13 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "Enrollment for Recontact",
+                            "taskID": "APHEnrollmentForRecontactTaskViewController-1E174065-5B02-11E4-8ED6-0800200C9A66",
+                            "taskClassName" : "APHEnrollmentForRecontactTaskViewController",
+                            "taskCompletionTimeString" : "1 Question"
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "scheduleString": "0 5 * * *",
+                  "tasks": [{
+                            "taskTitle" : "Re-consent",
+                            "taskID": "APHReconsentTaskViewController-27829fa5-d731-4372-ba30-a5859f655297",
+                            "taskFileName" : "Reconsent",
+                            "taskClassName" : "APHReconsentTaskViewController",
+                            "taskCompletionTimeString" : "1 Question"
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "interval": "P1Y",
+                  "expires" : "P170D",
+                  "delay"  : "P181D",
+                  "tasks": [{
+                            "taskTitle" : "Milestone Survey",
+                            "taskID": "MileStone-234234-d731-4372-ba30-a5859f655297-v1",
+                            "taskFileName" : "Milestone",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "22 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "interval": "P1Y",
+                  "expires" : "P195D",
+                  "delay"  : "P351D",
+                  "tasks": [{
+                            "taskTitle" : "Milestone Survey",
+                            "taskID": "MileStone-234234-d731-4372-ba30-a5859f655297-v2",
+                            "taskFileName" : "Milestone",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "22 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "interval": "P1Y",
+                  "expires" : "P170D",
+                  "delay"  : "P181D",
+                  "tasks": [{
+                            "taskTitle" : "Feedback Survey",
+                            "taskID": "Feedback-65756-d731-4372-ba30-a5859f655297-v1",
+                            "taskFileName" : "AppAndStudyFeedback",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "13 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "recurring",
+                  "interval": "P1Y",
+                  "expires" : "P195D",
+                  "delay"  : "P351D",
+                  "tasks": [{
+                            "taskTitle" : "Feedback Survey",
+                            "taskID": "Feedback-4564523-d731-4372-ba30-a5859f655297-v2",
+                            "taskFileName" : "AppAndStudyFeedback",
+                            "taskClassName" : "APCGenericSurveyTaskViewController",
+                            "taskCompletionTimeString" : "13 Questions"
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "Consent for Genetic Data Sharing",
+                            "taskID": "APHTwentyThreeAndMeConsentTaskViewController-bb423fb2-0e77-43a4-976b-89572384f606",
+                            "taskClassName" : "APHTwentyThreeAndMeConsentTaskViewController",
+                            "taskCompletionTimeString" : "16 Steps"
+                            }]
+                  }
+                  ]
+}

@@ -1,0 +1,63 @@
+{
+    "elements": [
+                 {
+                 "constraints": {
+                 "dataType": "boolean",
+                 "rules": [
+                           {
+                           "operator": "eq",
+                           "type": "SurveyRule",
+                           "value": 1
+                           },
+                           {
+                           "operator": "eq",
+                           "type": "SurveyRule",
+                           "value": 0
+                           }
+                           ],
+                 "type": "BooleanConstraints"
+                 },
+                 "guid": "47b09b4e-0415-11e5-8418-1697f925ec7b",
+                 "identifier": "permission",
+                 "prompt": "Congratulations, you are now registered for the study. If you would like to help us build an even better app, we would also appreciate it if we could contact you to discuss your personal experience in more detail.",
+                 "type": "SurveyQuestion",
+                 "uiHint": "checkbox"
+                 },
+                 {
+                 "constraints": {
+                 "dataType": "string",
+                 "type": "StringConstraints"
+                 },
+                 "guid": "053c4fcc-041c-11e5-8418-1697f925ec7b",
+                 "identifier": "email_address",
+                 "prompt": "Please enter your email address",
+                 "type": "SurveyQuestion",
+                 "uiHint": "textfield"
+                 },
+                 {
+                 "constraints": {
+                 "dataType": "string",
+                 "type": "StringConstraints"
+                 },
+                 "guid": "7c7cc2e4-0483-11e5-8418-1697f925ec7b",
+                 "identifier": "phone_number",
+                 "prompt": "Please enter your phone number (optional)",
+                 "type": "SurveyQuestion",
+                 "uiHint": "textfield"
+                 },
+                 {
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 },
+                 "guid": "44a820b4-048a-11e5-8418-1697f925ec7b",
+                 "identifier": "current_patient",
+                 "prompt": "Are you a current patient of Mount Sinai?",
+                 "type": "SurveyQuestion",
+                 "uiHint": "textfield"
+                 }
+                 ],
+    "identifier": "EnrolForRecontact",
+    "name": "EnrolForRecontact",
+    "type": "Survey"
+}

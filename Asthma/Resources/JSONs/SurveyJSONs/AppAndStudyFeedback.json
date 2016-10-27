@@ -1,0 +1,349 @@
+{
+    "identifier": "AppAndStudyFeedback",
+    "type": "Survey",
+    "name": "AppAndStudyFeedback",
+    "elements": [
+                 {
+                 "identifier": "manage_asthma",
+                 "prompt": "How useful do you think the Asthma Health app has been in helping you to manage your asthma?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "e500095b-2b26-415b-b48d-432a51321c0f",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Very useful"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Somewhat useful"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Useful"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Neutral"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Not very useful"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Not at all useful"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "asthma_knowledge",
+                 "prompt": "Has your knowledge about asthma increased since participating in the Asthma Mobile Health Study?",
+                 "uiHint": "checkbox",
+                 "guid": "31a3df7d-67b6-446e-8a9d-482b2811264b",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "recomend",
+                 "prompt": "Would you recommend the Asthma Health app to someone with Asthma?",
+                 "uiHint": "checkbox",
+                 "guid": "401cfa2c-5847-4bfb-9894-139ec30645e1",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "rate",
+                 "prompt": "How would you rate the Asthma Health app, overall?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "432524d2-da48-438d-a2f4-e78099d72482",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "1 star – I hate it"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "2 stars – I don’t like it"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "3 stars – It’s OK"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "4 stars – It’s good"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "5 stars – It’s great"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "favorite",
+                 "prompt": "What was your favorite feature(s) of the Asthma Health app?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "7da6219a-7afe-47bc-ae33-b0b9f9456364",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "allowMultiple": true,
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Surveys"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Reminders"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Dashboard"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Air Quality Near You"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Asthma Symptom Control Dashboard and Calendar"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Badges"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 7,
+                                 "label": "Learn Tab"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "unused",
+                 "prompt": "What feature(s) did you use the least (or not at all) while participating in the Asthma Health app?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "3ab98a6a-7163-42ed-8bf6-6f9064b25e39",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "allowMultiple": true,
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Surveys"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Reminders"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Dashboard"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Air Quality Near You"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Asthma Symptom Control Dashboard and Calendar"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Badges"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 7,
+                                 "label": "Learn Tab"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "least_favorite",
+                 "prompt": "What was your least favorite feature(s) of the Asthma Mobile Health Study?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "045821da-9580-4555-8a59-bcf28070e663",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "allowMultiple": true,
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Surveys"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Reminders"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Dashboard"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Air Quality Near You"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Asthma Symptom Control Dashboard and Calendar"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Badges"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 7,
+                                 "label": "Learn Tab"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "incomplete_surveys",
+                 "prompt": "Were there days that you did not complete the daily or weekly surveys?",
+                 "uiHint": "checkbox",
+                 "guid": "be9fea98-4c1b-4615-bd4f-a2bd4d258e04",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "rules": [
+                           {
+                           "operator": "eq",
+                           "skipTo": "again",
+                           "type": "SurveyRule",
+                           "value": 0
+                           }
+                           ],
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "why_incomplete",
+                 "prompt": "What were your reasons for not completing the surveys?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "592168c6-4693-4ab5-b0f1-0af4d9082e72",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "allowMultiple": true,
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "For days I did not have any symptoms, I often didn’t feel like completing the surveys"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "For days I was too busy, I often didn’t feel like completing the surveys"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "For days I was not feeling well, I often didn’t feel like completing the surveys"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "other_reasons_incomplete",
+                 "prompt": "Were there other reasons for skipping surveys you’d like to mention?",
+                 "uiHint": "multilinetext",
+                 "guid": "326342df-6b5c-411f-abe8-81abcec44495",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "string",
+                 "type": "StringConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "again",
+                 "prompt": "Are you willing to participate in future mobile health clinical research studies?",
+                 "uiHint": "checkbox",
+                 "guid": "3c62c50a-99c8-4a54-a1bc-b91eefd5fe8a",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "other_feedback",
+                 "prompt": "What feedback would you give to the Asthma Mobile Health Study team to improve this app?",
+                 "uiHint": "multilinetext",
+                 "guid": "386c46eb-1f9d-43d9-91ba-9f3aae838f93",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "string",
+                 "type": "StringConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "learned",
+                 "prompt": "What is the most important information or lesson that you have learned through use of the Asthma Health app?",
+                 "uiHint": "multilinetext",
+                 "guid": "b913d405-7145-4712-833c-54508dcf9100",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "string",
+                 "type": "StringConstraints"
+                 }
+                 }
+                 ]
+}

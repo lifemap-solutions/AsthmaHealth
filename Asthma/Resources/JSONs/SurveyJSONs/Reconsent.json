@@ -1,0 +1,20 @@
+{
+    "identifier": "Reconsent",
+    "type": "Survey",
+    "name": "Reconsent",
+    "elements": [
+                 {
+                    "identifier": "reconsented",
+                    "prompt": "Consent to participate in research must be renewed. Do you wish to continue participating in this study?",
+                    "uiHint": "checkbox",
+                    "guid": "4cadd8a9-9c23-4a1b-aae7-c4a65f94d18d",
+                    "type": "SurveyQuestion",
+                    "constraints": {
+                        "dataType": "boolean",
+                        "type": "BooleanConstraints"
+                    }
+                 }
+             ]
+}
+
+

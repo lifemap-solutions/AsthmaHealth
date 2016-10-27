@@ -1,0 +1,70 @@
+"CONFIRM_TITLE" = "Confirm";
+"RECONSENT_TITLE" = "Re-consent";
+"RECONSENT_BLURB" = "Consent to participate in research must be renewed. Do you wish to continue participating in this study?";
+"RECONSENTED_TITLE" = "Re-consented";
+"RECONSENTED_BLURB" = "Thanks you for your continued participation. Your re-consent has been recorded.";
+"CONFIRM_NOT_RECONSENTING_TITLE" = "Confirm";
+"CONFIRM_NOT_RECONSENTING_BLURB" = "Are you sure you do not want to continue the study?";
+"CONFIRMED_NOT_RECONSENTING_TITLE" = "Confirmed";
+"CONFIRMED_NOT_RECONSENTING_BLURB" = "We thank you for your participation. Please be sure to fill out all of the surveys before the study concludes.";
+"YES" = "Yes";
+"No" = "No";
+"CONTINUE" = "Continue";
+"REDO_MEDICATION_SURVEY_TITLE" = "Medication Survey";
+"REDO_MEDICATION_SURVEY_MSG" = "Take the Medication Survey again. It has been added to your Activities list";
+"REDO_MEDICATION_SURVEY_CANCEL" = "Ok";
+"CONSENT_UPDATE_TITLE" = "Consent Update";
+"CONSENT_UPDATE_MESSAGE" = "The study consent has been updated. You may view the new version and/or withdraw from the study in Profile tab.";
+
+"23ANDME_CONSENT_TITLE" = "Consent for Genetic Data Sharing";
+"23ANDME_CUSTOMER_QUESTION" = "Are you a current 23andMe customer?";
+"23ANDME_SIGNATORY_TITLE" = "Participant";
+"23ANDME_CONSENT_SUCCESS_TITLE" = "Connection Complete";
+"23ANDME_CONSENT_SUCCESS_MESSAGE" = "You have successfully shared your genetic data with this study!";
+"23ANDME_CONSENT_CANCELLED_TITLE" = "Consent Cancelled";
+"23ANDME_CONSENT_CANCELLED_MESSAGE" = "You must be a 23andMe customer in order to participate in this activity";
+
+"23ANDME_CONSENT_QUIZ_QUESTION1_TEXT" = "Scientists can anonymize your DNA data so that it could never be linked back to your identity.";
+"23ANDME_CONSENT_QUIZ_QUESTION1_TRUE_FEEDBACK" = "This answer is incorrect. Your DNA, much like your fingerprint, is unique to you, so it is possible to identify you if certain data are put together. While we use very strict data security measures to protect your privacy, there is always a small risk that your data may lead to you being re-identified. That is why this research study cannot promise anonymity.";
+"23ANDME_CONSENT_QUIZ_QUESTION1_TRUE_FEEDBACK_EMPHASIZE" = "incorrect";
+"23ANDME_CONSENT_QUIZ_QUESTION1_FALSE_FEEDBACK" = "This answer is correct. Your DNA, much like your fingerprint, is unique to you, so it is possible to identify you if certain data are put together. While we use very strict data security measures to protect your privacy, there is always a small risk that your data may lead to you being re-identified. That is why this research study cannot promise anonymity.";
+"23ANDME_CONSENT_QUIZ_QUESTION1_FALSE_FEEDBACK_EMPHASIZE" = "correct";
+
+"23ANDME_CONSENT_QUIZ_QUESTION2_TEXT" = "The Asthma Mobile Health App will transfer your genetic data from 23andMe to the app using strong security methods.";
+"23ANDME_CONSENT_QUIZ_QUESTION2_TRUE_FEEDBACK" = "This answer is correct. If you agree to share your 23andMe genetic data with the Asthma Health app, your data will be sent from 23andMe computers to your phone and then to AMHA computers using the same security methods banks and hospitals trust to transfer their data. Your 23andMe genetic data will be securely stored and connected to your AMHA2.0 data using a randomly generated code.";
+"23ANDME_CONSENT_QUIZ_QUESTION2_TRUE_FEEDBACK_EMPHASIZE" = "correct";
+"23ANDME_CONSENT_QUIZ_QUESTION2_FALSE_FEEDBACK" = "This answer is incorrect. If you agree to share your 23andMe genetic data with the Asthma Health app, your data will be sent from 23andMe computers to your phone and then to AMHA computers using the same security methods banks and hospitals trust to transfer their data. Your 23andMe genetic data will be securely stored and connected to your AMHA2.0 data using a randomly generated code.";
+"23ANDME_CONSENT_QUIZ_QUESTION2_FALSE_FEEDBACK_EMPHASIZE" = "incorrect";
+
+"23ANDME_CONSENT_QUIZ_QUESTION3_TEXT" = "I can expect to get feedback on my genetic data as it relates to my asthma.";
+"23ANDME_CONSENT_QUIZ_QUESTION3_TRUE_FEEDBACK" = "This answer is incorrect. The purpose of this study is to advance our understanding of the role genetics plays in asthma. This study will NOT provide you with any information regarding the genetic data that you upload. Instead, we will look across a wide range of genetic data to see if we can find any associations between certain genes and the disease.";
+"23ANDME_CONSENT_QUIZ_QUESTION3_TRUE_FEEDBACK_EMPHASIZE" = "incorrect";
+"23ANDME_CONSENT_QUIZ_QUESTION3_FALSE_FEEDBACK" = "This answer is correct. The purpose of this study is to advance our understanding of the role genetics plays in asthma. This study will NOT provide you with any information regarding the genetic data that you upload. Instead, we will look across a wide range of genetic data to see if we can find any associations between certain genes and the disease.";
+"23ANDME_CONSENT_QUIZ_QUESTION3_FALSE_FEEDBACK_EMPHASIZE" = "correct";
+
+
+
+/* Dashboard */
+
+"DASHBOARD_ACTIVITY_CAPTION" = "Activity Completion";
+"DASHBOARD_ACTIVITY_INFO" = "Check the Activities tab to see today's surveys.  Finish them all to get 100% Activity Completion.";
+
+"DASHBOARD_BADGED_CAPTION" = "Badges";
+"DASHBOARD_BADGES_TOOLTIP" = "As you complete daily surveys, work without asthma interruption, and achieve asthma-free nights and days, you'll earn badges for succeeding in the last 28 days. Tap item to see calendar view.";
+"DASHBOARD_BADGES_MEDICINE_ADHERENCE" = "Medicine Adherence";
+"DASHBOARD_BADGES_UNDISTURBED_DAYS" = "Undisturbed Days";
+"DASHBOARD_BADGES_UNDISTURBED_NIGHTS" = "Undisturbed Nights";
+"DASHBOARD_BADGES_SURVEY_COMPLETION" = "Survey Completion";
+"DASHBOARD_BADGES_WORK_ATTENDANCE" = "Work Attendance";
+
+"DASHBOARD_SYMPTOMS_CAPTION" = "Asthma Symptom Control";
+"DASHBOARD_SYMPTOMS_TOOLTIP" = "This graph shows you how well your asthma symptoms are being controlled, based on the information you provide in your daily and weekly surveys.";
+"DASHBOARD_SYMPTOMS_RATE_GOOD" = "Well Controlled";
+"DASHBOARD_SYMPTOMS_RATE_BAD" = "Could Be Better";
+"DASHBOARD_SYMPTOMS_RATE_UNKNOWN" = "Not Available Yet";
+
+"DASHBOARD_STEPS_TOOLTIP" = "This graph shows the number of steps you have taken each day, as recorded by your phone or connected device. Tap the button in the upper right corner to make the graph larger.";
+
+"DASHBOARD_SLEEP_CAPTION" = "Sleep";
+
+"DASHBOARD_PEAKFLOW_TOOLTIP" = "This graph shows your daily peak flow values, from your daily surveys or a connected device. Tap the button in the upper right corner to make the graph larger.";

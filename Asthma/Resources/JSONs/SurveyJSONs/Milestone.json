@@ -1,0 +1,564 @@
+{
+    "identifier": "Milestone",
+    "type": "Survey",
+    "name": "Milestone",
+    "elements": [
+                 {
+                 "identifier": "height",
+                 "prompt": "How tall are you? (inches)",
+                 "uiHint": "numberfield",
+                 "guid": "33278bbf-9e90-48b1-9456-caffd4790e5f",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "IntegerConstraints",
+                 "minValue" : 40,
+                 "maxValue" : 90
+                 }
+                 },
+                 {
+                 "identifier": "weight",
+                 "prompt": "How much do you weigh? (pounds)",
+                 "uiHint": "numberfield",
+                 "guid": "c68a56f2-27d3-43b4-b71d-4f152437c522",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "IntegerConstraints",
+                 "minValue" : 50,
+                 "maxValue" : 1000
+                 }
+                 },
+                 {
+                 "identifier": "gender",
+                 "prompt": "What is your gender?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "98b65445-ac50-4a87-b87e-1c4cfd129d25",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Male"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Female"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "age",
+                 "prompt": "How old are you?",
+                 "uiHint": "numberfield",
+                 "guid": "94fe71cc-f75b-4d9b-bffe-90a604319dcd",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "IntegerConstraints",
+                 "minValue" : 1,
+                 "maxValue" : 120
+                 }
+                 },
+                 {
+                 "identifier": "symptoms2",
+                 "prompt": "How often have you had asthma symptoms over the past month, on average?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "c84992d8-d96a-4660-ab07-41ac557a6ef1",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Every day"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Most but not all days"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "2-3 days per week"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "1-4 days per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Less than once per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Never"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "nights2",
+                 "prompt": "How many nights did asthma symptoms wake you up from sleep over the past month, on average?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "bfff68b4-26ef-43a0-9ffe-6ecfe60a13dc",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Every day"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Most but not all days"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "2-3 days per week"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "1-4 days per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Less than once per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Never"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "limited activity2",
+                 "prompt": "How many days has your asthma limited your activity over the past month, on average?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "a9a6ffdd-4ce1-46c3-b952-434bd1ca1cda",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Every day"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Most but not all days"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "2-3 days per week"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "1-4 days per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Less than once per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Never"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "past_month_quick_relief2",
+                 "prompt": "Over the past month, how often did you use your quick relief inhaler, on average?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "693f2a2d-3dea-42df-8a31-4f2be68e577d",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Daily"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Most but not all days"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "2-3 days per week"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "1-4 x per month"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Not at all"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "daily_yes2",
+                 "prompt": "On days when you use your quick relief inhaler, how many total puffs do you take in a day, on average?",
+                 "uiHint": "numberfield",
+                 "guid": "6b2b899c-bfae-4d15-9d86-e6ed54270027",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "step": null,
+                 "type": "IntegerConstraints",
+                 "maxValue": 20,
+                 "minValue": 1
+                 }
+                 },
+                 {
+                 "identifier": "use_aap",
+                 "prompt": "Have you used your asthma action plan (a written plan for how to change your medicine if your asthma gets worse from your doctor) since you have started the Asthma Mobile Health Study?",
+                 "uiHint": "checkbox",
+                 "guid": "8745a265-a78d-4657-86ab-ae5e79abdd70",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "make_aap",
+                 "prompt": "Has the Asthma Mobile Health Study prompted you to create an asthma action plan (a written plan for how to change your medicine if your asthma gets worse from your doctor)?  ",
+                 "uiHint": "checkbox",
+                 "guid": "fd256a3a-c7b3-49f0-b446-5a762b7efe6b",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "got_spirometry",
+                 "prompt": "Have you had your lung function measured by your asthma doctor (a test called spirometry) since joining the study?",
+                 "uiHint": "checkbox",
+                 "guid": "fac0d95d-4b7e-4646-bf91-b03bb3f3e1a9",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "boolean",
+                 "type": "BooleanConstraints"
+                 }
+                 },
+                 {
+                 "identifier": "best_peakflow",
+                 "prompt": "If you use your peak flow meter to monitor your asthma, enter your best peak flow. (L/min)",
+                 "uiHint": "numberfield",
+                 "guid": "13cb3620-c9b0-45f7-8eb7-07e15ca9f22e",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "IntegerConstraints",
+                 "step": null,
+                 "maxValue": 900,
+                 "minValue": 60
+                 }
+                 },
+                 {
+                 "identifier": "current_troubles",
+                 "prompt": "What currently troubles you most about your asthma?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "f4f13766-6a6e-4710-b620-d3854733157c",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Limits how active I am"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Makes me miss work/school"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "I have to use my quick relief medicine all the time"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "I can’t remember to take my controller medicine"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "I can’t sleep because my asthma wakes me up at night"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "I never know when something will trigger my asthma"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 7,
+                                 "label": "I hate it when I have an attack and I have to go to the emergency room or hospital"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 8,
+                                 "label": "None of the above"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "alleviate_troubles",
+                 "prompt": "Has your participation in the Asthma Mobile Health Study helped to alleviate some of the troubles you have with your asthma?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "5bf8c0d9-4a85-4033-a91c-11f675ee1f38",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Strongly agree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Agree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Neither agree nor disagree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Disagree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Strongly disagree"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "current_goal",
+                 "prompt": "Select your current goal(s) for asthma control:",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "7d753c11-a36b-42f1-8ce8-36edf5cd1234",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "allowMultiple": true,
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Be more active"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Miss/interfere work/school less often"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Use less quick relief medicine"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Remember to take my control medicine"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Sleep through the night without symptoms"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 6,
+                                 "label": "Avoid things that trigger my asthma"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 7,
+                                 "label": "Avoid asthma attacks"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 8,
+                                 "label": "I do not have any current goals for my asthma control"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "met_goal",
+                 "prompt": "Has your participation in the Asthma Mobile Health Study has helped you to achieve your initial goals for asthma control?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "44e305d7-b2a3-4e77-80d1-c25e354f7d62",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Strongly agree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "Agree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "Neither agree nor disagree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 4,
+                                 "label": "Disagree"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 5,
+                                 "label": "Strongly disagree"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "prevent_visit",
+                 "prompt": "Do you think using the Asthma Health app helped you prevent a visit with a clinician?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "78b08214-1f01-41b3-a2c0-8fe4a19ded4c",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Yes"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "No"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "I don’t know/I am not sure"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "cause_visit",
+                 "prompt": "Do you think using the Asthma Health app prompted a visit with a clinician about your asthma control?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "c00cdb8a-b9bf-4e3b-9a34-0248792a9937",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Yes"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "No"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "I don’t know/I am not sure"
+                                 }
+                                 ]
+                 }
+                 },
+                 {
+                 "identifier": "prevent_ed",
+                 "prompt": "Do you think using the Asthma Health app helped you to prevent an ED visit or hospitalization?",
+                 "uiHint": "MultiValueConstraints",
+                 "guid": "48470c18-6c21-4340-bcfa-5b293265b56b",
+                 "type": "SurveyQuestion",
+                 "constraints": {
+                 "dataType": "integer",
+                 "type": "MultiValueConstraints",
+                 "enumeration": [
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 1,
+                                 "label": "Yes"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 2,
+                                 "label": "No"
+                                 },
+                                 {
+                                 "type": "SurveyQuestionOption",
+                                 "value": 3,
+                                 "label": "I don’t know/I am not sure"
+                                 }
+                                 ]
+                 }
+                 }
+                 ]
+}

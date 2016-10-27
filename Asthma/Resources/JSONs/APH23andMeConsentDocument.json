@@ -1,0 +1,61 @@
+{
+    "documentProperties": {
+        "htmlDocument": "Asthma_23andMe_consent"
+    },
+    "sections": [
+        {
+            "sectionType": "custom",
+            "sectionTitle": "Welcome",
+            "sectionImage": "welcome",
+            "sectionImageTint": false,
+            "sectionSummary": "The 23andMe mission is to help people access, understand, and benefit from the human genome.\n\nThe Asthma Health app’s mission is to help participants understand asthma, adhere to treatment plans, identify and avoid triggers, and improve their health."
+        },
+        {
+            "sectionType": "custom",
+            "sectionTitle": "23andMe and Asthma Health",
+            "sectionImage": "handshake",
+            "sectionImageTint": false,
+            "sectionSummary": "Asthma Health is collaborating with 23andMe to learn more about how DNA impacts asthma.\n\nNow you can upload and share your genetic data from 23andMe with the Asthma Health research study. Participating in this sub-study is totally up to you and does NOT affect your participation in the Asthma Health research study."
+        },
+        {
+            "sectionType": "custom",
+            "sectionTitle": "We'll Test Your Understanding",
+            "sectionSummary": "We'll walk you through some information about the use of 23andMe genetic data in our Asthma Health research study and provide a short quiz at the end to confirm your understanding.",
+            "sectionContent": "Before completing the enrollment and adding your genetic data to your Asthma Health research study account, we will assess your understanding and your eligibility to provide consent. It is important that you understand what is involved in sharing this data. You should not share your genetic data until all of your questions are answered. Feel free to contact the study sponsor with any questions."
+        },
+        {
+            "sectionType": "custom",
+            "sectionTitle": "Genetic Data",
+            "sectionImage": "fingerprint",
+            "sectionImageTint": true,
+            "sectionSummary": "Your genetic profile is unique to you, and, much like a fingerprint, it is a marker of who you are. It is difficult or impossible to break the link between you and your genetic data.\n\nThis study will not return any results about your genetic data back to you.",
+            "sectionContent": "Genetic data can tell you things about your health and ancestry. Genetic data also carries information about your family. This study will examine the link between genetics and asthma."
+        },
+        {
+            "sectionType": "custom",
+            "sectionTitle": "Security",
+            "sectionImage": "data_security",
+            "sectionImageTint": false,
+            "sectionSummary": "Your genetic data will be securely sent from 23andMe computers to your phone and then to the secure Asthma Health research study data storage computers.",
+            "sectionContent": "Your genetic data will be transferred securely from 23andMe computers to your phone and then to secure Asthma Health research study data storage computers using the same security methods that banks and hospitals trust to transfer their data."
+        },
+        {
+            "sectionType": "privacy",
+            "sectionSummary": "In order to protect your privacy we will use a random code instead of your name on all your study data. This unique code cannot be used to directly re-identify you.\n\nAll of your study data (including this consent) will be maintained in a secure database. Only a limited number of researchers will have access to your genetic information.",
+            "sectionContent": "While we use very strict data security measures to protect your privacy, there is always a small risk that your data may lead to you being identified.\n\nAs technology advances, there may be new ways of linking data back to you that we cannot foresee today, so we cannot promise anonymity."
+        },
+        {
+            "sectionType": "withdrawing",
+            "sectionTitle": "Withdrawing",
+            "sectionSummary": "There will be no penalty to you if you decide not to take part in this study. You can withdraw your consent and discontinue participation at any time. If you withdraw from the study, we will stop collecting new data, but any data already collected will remain as part of the study.",
+            "sectionContent": "There will be no penalty to you if you decide not to take part in this study. To end your participation in the study at any time, choose “Leave Study” in the profile section of the app, then delete the “asthma app” from your phone or contact the study team by email. The study team may also withdraw you from the study at any time for any reason."
+        },
+        {
+            "sectionType": "custom",
+            "sectionTitle": "Contact",
+            "sectionSummary": "You are welcome to contact the study team  at any time if you have any questions or if anything is unclear. You can use the study's email address, asthmamobilehealth@mssm.edu, or you can call the Principal Investigator at: 212-241-7526",
+            "sectionImage": "12_Recontact",
+            "sectionAnimationUrl": "12_Recontact"
+        }
+    ]
+}
