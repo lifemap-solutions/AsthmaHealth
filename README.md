@@ -4,21 +4,41 @@ The Asthma Mobile Health study is a personalized app that helps individuals gain
 
 Building the App
 ================
+### Requirements:
+- Xcode version 7.3.1
+- iOS Deployment Target: 9.3
+- Build Settings (Code Signing Identity, Provisioning Profile)
 
-###Requirements
+#### Certificates
+All confidential data have been removed and proper places have been marked.
 
-* Xcode 6.3
-* iOS 8.3 SDK
+Precisely:
 
-###Getting the source
+##### Sage Bridge API Certificates:
+
+ - Asthma/Resources/Certificates/asthma.pem
+ - Asthma/Resources/Certificates/asthma-staging.pem
+ - Asthma/Resources/Certificates/mssm_asthma_public_04092015.pem 
+
+##### API keys and others (stored in plist files*):
+ - 23andMe: 23andmeClientId, 23andmeSecret, 23andmeUrl.
+- AWS: AWSAppID, CognitoID
+- Crashlytics: Fabric/APIKey.
+
+* there are 2 Info.plist files: one for Asthma target (Info.plist) and one for Asthma QA target (Asthma QA.plist).
+
+They were marked by "<REPLACE-ME>”.
+The application without this could be build and run on the device, but it won’t work properly.
+
+### Getting the source
 
 First, check out the source, including all the dependencies:
 
 ```
-git clone --recurse-submodules https://github.com/ResearchKit/AsthmaHealth.git
+git clone -b ms-asthma-1.5 https://github.com/lifemap-solutions/AsthmaHealth
 ```
 
-###Building it
+### Building it
 
 Open the project, `Asthma.xcodeproj`, and build and run.
 
